@@ -1,0 +1,434 @@
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: mdsalim400@gmail.com
+  Support: admin@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700&display=swap');
+ body {
+	font-family: 'Gentium Basic', serif;
+	font-weight: normal;
+	font-style: normal;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Gentium Basic', serif;
+	font-weight: normal;
+	color: #313131;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #7e7e7e;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+/* button style */
+
+.btn {
+	-moz-user-select: none;
+	background: #1696e7 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 13px 25px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+.owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+.owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+.owl-carousel:hover .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+.owl-carousel .owl-nav div:hover {
+	background: #2B96CC;
+	color: #fff
+}
+
+/* scrollUp */
+#scrollUp {
+	background: #7DBA2F;
+	height: 35px;
+	width: 35px;
+	right: 50px;
+	bottom: 77px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 34px;
+}
+#scrollUp:hover {
+	background: #444;
+}
+
+/*============ Header Code CSS Part Start =============== */
+
+.header{
+  /*  background: linear-gradient(180deg,#f8f4f2 0,#f5f1ed 10%,#f2ede7);*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100px;
+background-image: url(../images/mountain-watermark.png);
+   
+}
+.logo img {
+    margin-top: 20px;
+}
+.serach-box i {
+    margin-top: 35px;
+    color: gray;
+}
+hr.line {
+    background: gray;
+    height: 1px;
+    margin-top: 10px;
+}
+.side-box.text-right img {
+    margin-top: 19px;
+}
+/*============ banner Code CSS Part Start =============== */
+
+.banner{
+   
+ 
+}
+.thumniel{
+    background-position: center center;
+    background-size: cover;
+    height: 100px;
+    height: 350px;
+ }
+.modern_title{
+    background-position: center center;
+    background-size: cover;
+    height: 100px;
+    background-image: url(../images/symbols-watermark4.svg);
+    height: 250px; 
+}
+
+
+.art_title{
+   
+    background-size: cover;
+    height: 100px;
+    background-image: url(../images/brush-shape.svg);
+    height: 200px;
+}
+
+
+.art_title h2 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #010101;
+    line-height: 56px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+.art_title h5 {
+    font-size: 35px;
+    margin-bottom: 35px;
+    font-weight: 700;
+    color: gray;
+}
+.about_title h6 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #010101;
+}
+hr.about_line {
+    height: 2px;
+    background: gray;
+    width: 81px;
+    margin-left: 110px;
+    margin-top: -15px;
+}
+.about_title p {
+    color: gray;
+    font-size: 16px;
+}
+.next-priv ul li{
+    display: inline;
+}
+.next-priv ul li a {
+    display: inline-block;
+    padding: 0px 0px;
+    margin-left: 100px;
+    color: gray;
+    transition: .5s;
+    margin-bottom: 20px;
+}
+.next-priv ul li a:hover{
+    color: #010101;
+}
+/*right site*/
+.modern_title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: gray;
+    writing-mode: vertical-rl;
+    transform: scale(-1.5);
+    margin-left: 150px;
+    margin-top: 120px;
+    opacity: 0.2;
+}
+.modern_title h1 {
+    font-size: 54px;
+    font-weight: 700;
+    color: gray;
+    margin-bottom: 70px;
+    writing-mode: vertical-lr;
+    transform: scale(-1.5);
+    margin-left: 250px;
+    margin-top: -222px;
+    margin-bottom: -100px;
+    opacity: 0.4;
+    
+}
+.modern_title a i {
+    color: gray;
+    margin-right: -50px;
+    margin-bottom: 100px;
+}
+.modern_title a p {
+    font-size: 12px;
+    writing-mode: vertical-lr;
+    transform: scale(-1.5);
+    margin-left: 392px;
+    color: gray;
+    text-transform: uppercase;
+}
+.modern_title p1 {
+    position: absolute;
+    content: "";
+    background: #010101;
+    height: 3px;
+    width: 26px;
+    margin-top: -3px;
+    margin-left: -6px;
+}
+   .angle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 9px 0 9px;
+    border-color: #010101 transparent transparent transparent;
+    margin-left: 397px;
+    position: absolute;
+    margin-top: 127px;
+}
+}
+.modern_title {
+    position: relative;
+}
+.modern_title::after {
+    position: absolute;
+    content: "";
+    background: #010101;
+    height: 96px;
+    width: 2px;
+    margin-top: 32px;
+    margin-left: 55px;
+}
+.ispiration ul li a {
+    color: gray;
+    display: inline-block;
+    padding: 12px 0;
+    margin-right: 25px;
+    transition: .5s
+}
+.ispiration ul li a:hover{
+    color: #010101;
+}
